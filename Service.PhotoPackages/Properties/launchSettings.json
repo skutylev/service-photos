@@ -1,0 +1,37 @@
+﻿{
+  "profiles": {
+    "Service.PhotoPackages.Jupiter": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONSUL_ACL_TOKEN": "be6fc5e0-93e4-11e8-ba9b-001dd8b71dc8",
+        "CONSUL_SECTION_KEY": "jupiter-mbr/",
+        "CONSUL_URI": "http://rancher-test.mbr.homecredit.ru:8500"
+      }
+    },
+    "Service.PhotoPackages.Uat": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONSUL_ACL_TOKEN": "be6fc5e0-93e4-11e8-ba9b-001dd8b71dc8",
+        "CONSUL_SECTION_KEY": "uat-mbr/",
+        "CONSUL_URI": "http://rancher-test.mbr.homecredit.ru:8500"
+      }
+    },
+    "Service.PhotoPackages.Prod": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONSUL_ACL_TOKEN": "FBAF54CC-E03D-4763-9F19-376114D3857B",
+        "CONSUL_SECTION_KEY": "prod/",
+        "CONSUL_URI": "http://prod.mbr.homecredit.ru:8500"
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+stages:
+  - prepare
+  - restore
+  - build
+  - test
+  - code-analysis
+  - publish
+  - docker-build
+  - docker-push
+  - restart
+  - deploy
+  - clean
+
+include:
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/prepare.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/restore.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/build.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/test.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/code-analysis.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/publish.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/docker-build.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/docker-push.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/restart.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/deploy.gitlab-ci.yml'
+  - project: 'mbr-devops/ci'
+    ref: dev
+    file: '/.gitlab/ci/clean.gitlab-ci.yml'
